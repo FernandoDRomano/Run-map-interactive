@@ -47,27 +47,25 @@
       .st7 {
         fill: #ffffff;
       }
-	  .pin0 {
-		fill: #d6d6d6;
-	  }
-	  .pin1 {
-		fill: #e19000;
-	  }
-	  .pin2 {
-		fill: #390075;
-	  }
+      .pin0 {
+        fill: #d6d6d6;
+      }
+      .pin1 {
+        fill: #e19000;
+      }
+      .pin2 {
+        fill: #390075;
+      }
 
-     
-		.provincia{
-			transition: all .2s ease-in-out;
-		}
+      .provincia {
+        transition: all 0.2s ease-in-out;
+      }
 
-		.provincia:hover{
-			fill: orange;
-			stroke: white;
-			stroke-width: 2px;
-		}
-	  
+      .provincia:hover {
+        fill: #f29100;
+        stroke: white;
+        stroke-width: 2px;
+      }
 
       .mb-0 {
         margin-bottom: 0;
@@ -92,17 +90,17 @@
         text-align: center;
         padding: 0.5rem 0;
         margin-bottom: 0.5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
       }
 
-	  .img-pin{
-		display: none;
-		margin-left: 1.2rem;
-		margin-bottom: 1.7rem;
-	  }
+      .img-pin {
+        display: none;
+        margin-left: 1.2rem;
+        margin-bottom: 1.7rem;
+      }
 
       .contenedor-mapa {
         border: 1px solid #9e9e9d;
@@ -130,7 +128,7 @@
       .triangulo::after {
         content: "";
         position: absolute;
-        background: orange;
+        background: #f29100;
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
@@ -138,9 +136,9 @@
         top: 20%;
       }
 
-	  .contenedor-informacion{
-		animation: entrar 1s;
-	  }
+      .contenedor-informacion {
+        animation: entrar 1s;
+      }
 
       .contenedor-informacion-provincia {
         font-size: 4rem;
@@ -199,19 +197,19 @@
         font-size: 2rem;
       }
 
-	  .contenedor-texto-sm{
-		text-align: center;
-		margin-bottom: 1rem;
-		font-size: 1.3rem;
-	  }
+      .contenedor-texto-sm {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
 
       /* MEDIAS QUERYS */
       @media (min-width: 425px) {
-        .img-pin{
-			display: block;
-			margin-left: 1.2rem;
-			margin-bottom: 1.7rem;
-		}
+        .img-pin {
+          display: block;
+          margin-left: 1.2rem;
+          margin-bottom: 1.7rem;
+        }
       }
 
       @media (min-width: 768px) {
@@ -239,9 +237,9 @@
           padding-right: 0.5rem;
         }
 
-		.contenedor-texto-sm{
-			display: none;
-		}
+        .contenedor-texto-sm {
+          display: none;
+        }
 
         .contenedor-informacion-provincia {
           font-size: 5rem;
@@ -294,29 +292,29 @@
           margin-bottom: 3rem;
           font-size: 1.5rem;
         }
-
       }
 
-	  /* ANIMACION */
-	  @keyframes entrar {
-		0% {
-			transform: translateX(-20rem);
-			opacity: 0;
-		}
-		100%{
-			opacity: 1;
-			transform: translateX(0);
-		}
-	  }
-
+      /* ANIMACION */
+      @keyframes entrar {
+        0% {
+          transform: translateX(-20rem);
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container-fluid" style="margin-top: 3rem">
+    <div class="container-fluid" style="margin-top: 6rem; margin-bottom: 10rem">
       <div class="row fila">
         <div class="col-xs-12 col-sm-4 col-lg-4 ordenar informacion-provincia">
           <div class="contenedor-informacion">
-            <h2 class="contenedor-informacion-provincia m-0">Tucumán</h2>
+            <h2 class="contenedor-informacion-provincia m-0">
+              Tucumán (Casa Central)
+            </h2>
             <hr class="separador" />
             <div class="contenedor-informacion-direccion">
               <p class="font-weight-bold">Las Piedras 1284</p>
@@ -333,7 +331,8 @@
               </p>
               <p class="contenedor-informacion-horario-detalle">
                 de <span class="font-weight-bold">Lunes a Viernes</span> de
-                <span class="font-weight-bold">9:00 a 18:00 hs.</span>
+                <span class="font-weight-bold">9:00 a 13:00 hs.</span> y de
+                <span class="font-weight-bold">13:30 a 18:00 hs.</span>
               </p>
             </div>
           </div>
@@ -341,11 +340,11 @@
         <div class="col-xs-12 col-sm-8 col-lg-7">
           <div class="contenedor-mapa-titulo">
             <p class="mapa-titulo mb-0">
-              ESTAMOS EN TODO EL <span class="font-weight-bold">NOA</span>
+              DÓNDE PODÉS ENCONTRARNOS <span class="font-weight-bold"></span>
             </p>
             <p class="mb-0 img-pin">
-			  <!-- SVG PIN -->
-              
+              <!-- SVG PIN -->
+
               <svg
                 version="1.1"
                 id="Capa_1"
@@ -353,7 +352,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px"
                 y="0px"
-				width="32px"
+                width="32px"
                 viewBox="0 0 17.5 24"
                 style="enable-background: new 0 0 17.5 24"
                 xml:space="preserve"
@@ -438,10 +437,12 @@
               <span class="triangulo"></span>
             </p>
 
-			<p class="contenedor-texto-sm">Selecciona la provincia, para mas información</p>
+            <p class="contenedor-texto-sm">
+              Selecciona la provincia, para mas información
+            </p>
 
-			<!-- SVG MAPA -->
-            
+            <!-- SVG MAPA -->
+
             <svg
               version="1.1"
               id="Capa_1"
@@ -1422,27 +1423,33 @@
             direccion: "Chimborazo 160",
             telefono: "(388) 425 2741",
             correo: "clientescorporativos.jujuy@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
 					<span class="font-weight-bold">8:00 a 18:00 hs. Sábados </span>
 					de <span class="font-weight-bold">9:00 a 13:00 hs.</span>
 				</p>`,
-            mostrar: false,
+            mostrar: true,
           },
-          logistica: {},
+          logistica: {
+            direccion: "Dr. Zurueta N° 95 B° San Pedrito",
+            telefono: "(388) 342 0630",
+            correo: "ingresos.jujuy@correoflash.com",
+            horario: `<p class="contenedor-informacion-horario-detalle">
+					de <span class="font-weight-bold">Lunes a Viernes</span> de
+					<span class="font-weight-bold">9:00 a 17:00 hs.</span></p>`,
+            mostrar: true,
+          },
         },
         {
           id: "tucuman",
-          provincia: "Tucumán",
+          provincia: "Tucumán (Casa Central)",
           postal: {
             direccion: "Las Piedras 1284",
             telefono: "(0381) 4247896 / 4247304",
             correo: "info@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
-					<span class="font-weight-bold">9:00 a 18:00 hs.</span>
+					<span class="font-weight-bold">9:00 a 13:00 hs.</span> y de <span class="font-weight-bold"> 13:30 a 18:00 hs. </span>
 				</p>`,
             mostrar: false,
           },
@@ -1455,10 +1462,10 @@
             direccion: "Barrio Los Alerces, Manzana 804 A, casa 11",
             telefono: "(387) 421 5282",
             correo: "gcsalta@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
-					<span class="font-weight-bold">9:00 a 18:00 hs.</span>
+					<span class="font-weight-bold">9:00 a 13:00 hs.</span> y de <span class="font-weight-bold">16:00 a 19:00 hs.</span>
+          <span class="font-weight-bold">Sabados</span> de <span class="font-weight-bold">9:00 a 13:00 hs.</span>
 				</p>`,
             mostrar: true,
           },
@@ -1466,10 +1473,9 @@
             direccion: "San Juan Nº 1471",
             telefono: "(387) 421 5282",
             correo: "marcelo.diaz@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
-					<span class="font-weight-bold">9:00 a 18:00 hs. Sábados </span>
+					<span class="font-weight-bold">8:00 a 18:00 hs. Sábados </span>
 					de <span class="font-weight-bold">9:00 a 13:00 hs.</span>
 				</p>`,
             mostrar: true,
@@ -1482,7 +1488,6 @@
             direccion: "Av. Aguirre Norte N° 536",
             telefono: "(385) 600 5159",
             correo: "santiago@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
 					<span class="font-weight-bold">8:00 a 18:00 hs. Sábados </span>
@@ -1499,10 +1504,9 @@
             direccion: "Av. Carranza 291",
             telefono: "(383) 442 7116",
             correo: "gerencia.catamarca@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
-					<span class="font-weight-bold">8:00 a 18:00 hs.</span>
+					<span class="font-weight-bold">9:00 a 18:00 hs.</span>
 				</p>`,
             mostrar: false,
           },
@@ -1515,7 +1519,6 @@
             direccion: "Callao 215",
             telefono: "(380) 443 8586",
             correo: "gerencia.larioja@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
 					<span class="font-weight-bold">8:00 a 17:00 hs.</span>
@@ -1531,10 +1534,9 @@
             direccion: "Carril Rodríguez Peña 2255 Godoy Cruz",
             telefono: "(261) 248 7940",
             correo: "gerencia.mendoza@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
-					<span class="font-weight-bold">9:00 a 17:00 hs.</span>
+					<span class="font-weight-bold">9:00 a 19:00 hs.</span>
 				</p>`,
             mostrar: false,
           },
@@ -1544,10 +1546,9 @@
           id: "cordoba",
           provincia: "Cordoba",
           postal: {
-            direccion: "Completo Ucoma II Gral. Manuel Savio 6010",
+            direccion: "Complejo Ucoma II Gral. Manuel Savio 6010",
             telefono: "(351) 637 2088",
             correo: "operacioncordoba@correoflash.com",
-            dias: "Lunes a Viernes",
             horario: `<p class="contenedor-informacion-horario-detalle">
 					de <span class="font-weight-bold">Lunes a Viernes</span> de
 					<span class="font-weight-bold">9:00 a 17:00 hs.</span>
@@ -1569,7 +1570,6 @@
             sucursal = sucursales.filter((el) => el.id == id)[0];
             graficarDatosDeLaSucursal(sucursal);
           }
-
         });
       });
 
@@ -1601,11 +1601,14 @@
                   >${sucursal.postal.correo}</a
                 >
               </p>
-            </div>
-            <div class="contenedor-informacion-horario">
-              <p class="contenedor-informacion-horario-titulo font-weight-bold">Horario de Atención</p>
-              ${sucursal.postal.horario}
             </div>`;
+
+          if (sucursal.postal.horario != "") {
+            html += `<div class="contenedor-informacion-horario">
+                <p class="contenedor-informacion-horario-titulo font-weight-bold">Horario de Atención</p>
+                ${sucursal.postal.horario}
+              </div>`;
+          }
         }
 
         if (Object.entries(sucursal.logistica).length != 0) {
@@ -1623,14 +1626,17 @@
 				>${sucursal.logistica.correo}</a
 				>
 			</p>
-			</div>
-			<div class="contenedor-informacion-horario">
-			<p class="contenedor-informacion-horario-titulo font-weight-bold">Horario de Atención</p>
-			${sucursal.logistica.horario}
 			</div>`;
+
+          if (sucursal.logistica.horario != "") {
+            html += `<div class="contenedor-informacion-horario">
+        <p class="contenedor-informacion-horario-titulo font-weight-bold">Horario de Atención</p>
+        ${sucursal.logistica.horario}
+        </div>`;
+          }
         }
 
-		html += "</div>"
+        html += "</div>";
 
         contenedor.innerHTML = "";
         contenedor.insertAdjacentHTML("beforeend", html);
